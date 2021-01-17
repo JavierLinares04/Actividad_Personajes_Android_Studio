@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/I_fondo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fondo2" />
+
+    <TextView
+        android:id="@+id/Tv_inferior"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="#7A57CA3D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/Scroll_botones"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="funcion_original"
+                android:text="Original" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="funcion_color"
+                android:text="Color" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="funcion_suma_altura"
+                android:layout_weight="1"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="funcion_resta_altura"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Alto-ancho" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="funcion_suma_anchura"
+                android:layout_weight="1"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:onClick="funcion_resta_anchura"
+                android:layout_weight="1"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="funcion_info"
+                android:layout_weight="1"
+                android:text="Info" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="funcion_personaje"
+                android:text="Personajes" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/I_central"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/Scroll_person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scroll_botones" />
+
+    <HorizontalScrollView
+        android:id="@+id/Scroll_person"
+        android:layout_width="0dp"
+        android:layout_height="83dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/I_Logo"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="funcion_logo"
+                app:srcCompat="@drawable/street0" />
+
+            <ImageView
+                android:id="@+id/I_Ruy"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="funcion_Ruy"
+                app:srcCompat="@drawable/street2" />
+
+            <ImageView
+                android:id="@+id/I_Vega"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="funcion_Vega"
+                app:srcCompat="@drawable/street3" />
+
+            <ImageView
+                android:id="@+id/I_M_Bison"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="funncion_mbison"
+                app:srcCompat="@drawable/street4" />
+
+            <ImageView
+                android:id="@+id/I_Chun_Li"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="funcion_chun_li"
+                app:srcCompat="@drawable/street5" />
+
+            <ImageView
+                android:id="@+id/I_Ken"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="funcion_ken"
+                app:srcCompat="@drawable/ken" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintEnd_toStartOf="@+id/imageView12"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/Tv_inferior"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="funcion_flecha"
+        app:srcCompat="@drawable/boton1" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/imageView13"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        android:onClick="funcion_lupa"
+        app:srcCompat="@drawable/boton2" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintEnd_toStartOf="@+id/Tv_inferior"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
+        android:onClick="funcion_rueda"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/boton3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Imagen"
+        app:layout_constraintBottom_toBottomOf="@+id/I_fondo"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
